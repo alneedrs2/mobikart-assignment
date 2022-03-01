@@ -29,17 +29,14 @@ const displaySearchResult = (data) => {
     data.slice(0, 20).forEach((datas) => {
       const div = document.createElement("div");
       div.classList.add("col");
-      div.innerHTML = `
-        
-        <div   class="card align-items-center">
-        
-        
-        <img class="w-50 p-5" src="${datas.image}  " class="card-img-top" alt="...">
+      div.innerHTML = `        
+        <div   class="card align-items-center">        
+        <img class="w-50 p-5" src="${datas.image}" class="card-img-top" alt="...">
         <div class="card-body">
         <h4 class="card-title">${datas.phone_name}</h4>
         <h5> Brand: ${datas.brand}</h5>  
         </div>
-        <button onclick="(loadPhoneDetail('${datas.slug}'))" class="btn btn-primary">Phone Details</button>
+        <button onclick="(loadPhoneDetail('${datas.slug}'))" class="btn btn-success">Phone Details</button>
         `;
       searchResult.appendChild(div);
     });
@@ -63,7 +60,7 @@ const displayloadPhoneDetail = (datas) => {
   phoneDetails = document.getElementById("phone-details");
   phoneDetails.innerHTML = "";
   const div = document.createElement("div");
-  div.classList.add("col");
+  div.className = "col col-lg-4 col-sm-12";
   div.innerHTML = `
   <div class ="card-body ">
   <img src="${datas.image}">

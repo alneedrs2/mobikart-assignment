@@ -15,6 +15,7 @@
     <title>MobiKart | Find Your Best Mobile</title>
   </head>
   <body>
+    <!-- Navbar part -->
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand"
@@ -38,6 +39,7 @@
         </button>
       </div>
     </nav>
+    <!-- Main part here -->
     <main>
       <h2 class="text-center t-colr">Search Your Favourite Phone</h2>
 
@@ -51,7 +53,7 @@
         />
         <button
           onclick="searchPhone()"
-          class="btn btn-secondary"
+          class="btn btn-secondary btn-warning"
           type="button"
           id="button-Search"
         >
@@ -61,7 +63,7 @@
 
       <div id="phone-details" class="w-50 mx-auto"></div>
 
-      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4"></div>
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-3"></div>
     </main>
 
     <script src="./js/app.js"></script>
