@@ -4,30 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MobiKart BuyMobile Online | Buy Your Best Phone</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/d294fa14da.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>MobiKart | Find Your Best Mobile</title>
   </head>
-  <body class="bg-back">
-    <div class="container">
-      <nav class="navbar navbar-dark my-3">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./images/MobiKart-logos_transparent.png"
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"
+          ><img
+            src="images/MobiKart-logos_transparent.png"
             alt=""
             height="200px"
             width="250px"
-          />
-        </a>
+            srcset=""
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,47 +34,41 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="./images/pngegg.png" alt="" height="55px" width="55px" />
+          <img src="images/pngegg.png" height="50px" width="50px" alt="" />
         </button>
-      </nav>
+      </div>
+    </nav>
+    <main>
+      <h2 class="text-center t-colr">Search Your Favourite Phone</h2>
 
-      <main class="content-area">
-        <div class="search-bar col-md-6 mx-auto">
-          <h1 class="text-center">Search Your Favourite Phone</h1>
-          <div class="search-box my-5">
-            <input
-              id="search-field"
-              type="text"
-              class="form-control"
-              placeholder="Enter a Phone Name"
-            />
-            <button onclick="searchPhone()" class="btn btn-success search-btn">
-              Search
-            </button>
-          </div>
-        </div>
-        <!-- phone details  -->
-        <div id="phone-details" class="w-50 mx-auto">
-      
-        </div>
-        <!-- Single phone -->
-        <h3 id="error-message" class="text-danger"></h3>
-        <div
-          id="phone-container"
-          class="row px-4 py-4"
-        ></div>
-  </div>
-        
-      </main>
-    </div>
+      <div class="input-group mb-3 w-50 mx-auto">
+        <input
+          id="search-field"
+          type="text"
+          class="form-control"
+          placeholder="Search Your Phone Name"
+          aria-label="Recipient's username"
+        />
+        <button
+          onclick="searchPhone()"
+          class="btn btn-secondary"
+          type="button"
+          id="button-Search"
+        >
+          Search
+        </button>
+      </div>
 
-    <!-- Optional JavaScript -->
+      <div id="phone-details" class="w-50 mx-auto"></div>
+
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </main>
+
+    <script src="./js/app.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <!-- custom js-->
-    <script src="./js/app.js"></script>
   </body>
 </html>
